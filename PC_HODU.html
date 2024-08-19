@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODU</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./PC_HODU.css">
+</head>
+
+<script>
+    function emailCheck(email_address){     
+	email_regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
+	if(!email_regex.test(email_address)){ 
+		return false; 
+	}else{
+		return true;
+	}
+}
+function check(email) {
+	var emailInput = document.getElementById('email');
+
+	var email = emailInput.value;
+
+	if (emailCheck(email)) {
+		resultDiv.innerHTML = '유효한 이메일 주소입니다.';
+        return true;
+	} else {
+		resultDiv.innerHTML = '유효하지 않은 이메일 주소입니다.';
+        return false;
+	}
+}
+</script>
+
+<body>
+    <header id="top">
+        <nav>
+            <img src="./Final_Project_IMG/Logo-fin.png" alt="HODU-logo">
+            <p class="link">
+                <span>Home</span><span>About</span><span>Support</span>
+            </p>
+            <p class="download-link">Download</p>
+        </nav>
+        <div class="top">
+            <p>
+                Lorem Ipsum is simply<br>
+                dummy text of the printing and
+            </p>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and<br>
+                typesetting industry.<br>
+                Lorem Ipsum has been the industry's standard dummy text<br>
+                ever since the 1500s, when an unknown
+            </p>
+            <p class="download-link">Download</p>
+        </div>
+    </header>
+    <!-- ############################### main ################################## -->
+    <main>
+        <!-- ========================================= -->
+        <div class="sec01">
+            <img src="./Final_Project_IMG/고양이 2.png" alt="HODU사진">
+            <div>
+                <p>
+                    Lorem Ipsum is simply<br>
+                    dummy text of the printing<br>
+                    and dummy text
+                </p>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting<br>
+                    industry.
+                </p>
+            </div>
+        </div>
+        <!-- ========================================= -->
+        <div class="sec02">
+            <p>dummy text of the printing and dummy</p>
+            <p>
+                Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+            </p>
+        </div>
+        <!-- ========================================= -->
+        <article class="img-groups">
+            <div class="img-group01">
+                <img src="./Final_Project_IMG/g1-1.png" alt="">
+                <img src="./Final_Project_IMG/g1-2.png" alt="">
+                <img src="./Final_Project_IMG/g1-3.png" alt="">
+            </div>    
+            <div class="img-group02">
+                <img src="./Final_Project_IMG/g2-1.png" alt="">
+                <img src="./Final_Project_IMG/g2-2.png" alt="">
+                <img src="./Final_Project_IMG/g2-3.png" alt="">
+            </div>
+            <div class="img-text">
+                <p>
+                    Continue exploring HODU
+                </p>
+                <p class="show-more-btn">
+                    Show more
+                </p>
+            </div>
+        </article>
+        <!-- ========================================= -->
+        <div class="line"></div>
+        <!-- ========================================= -->
+        
+        <div class="sec04">
+            <p id="where">Where you'll be</p>
+            <p id="addr">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+        </div>
+
+        <!-- * 카카오맵 -->
+        <div id="daumRoughmapContainer1724033929202" class="root_daum_roughmap root_daum_roughmap_landing">
+            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp" : "1724033929202",
+                    "key" : "2kdgk",
+                    "mapWidth" : "1278",
+                    "mapHeight" : "520"
+                }).render();
+            </script>
+        </div>
+        <div class="main-bottom">
+            <section class="subscribe">
+                <div>
+                    <h2>Subscribe to our Blog post</h2>
+                    <p id="sub-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                        Lorem Ipsum has been the industry's standard dummy text
+                    </p>
+                </div>
+                <div class="input-email">
+                    <img src="./Final_Project_IMG/mail.svg" alt="">
+                    <form action="./modal.html" onsubmit="return check()">
+                        <input type="text" name="email" placeholder="Enter your e-mail address">    
+                        <button id="input-btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+
+            <div class="top-btn">
+                <a href="#top"><img src="Final_Project_IMG/scroll-top-btn.png" alt="페이지 상단으로 이동"></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="./Final_Project_IMG/Logo-fin.png" alt="호두로고">
+        <p class="footer-icon-group">
+            <img src="./Final_Project_IMG/icon-blog.png" alt="블로그아이콘">
+            <img src="./Final_Project_IMG/icon-insta.png" alt="인스타아이콘">
+            <img src="./Final_Project_IMG/icon-facebook.png" alt="페이스북아이콘">
+            <img src="./Final_Project_IMG/icon-youtube.png" alt="유투브아이콘">
+        </p>
+    </footer>
+</body>
+</html>
