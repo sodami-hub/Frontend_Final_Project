@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     align-items: center;
     
-    font-family: "Pretendard";
+    font-family : "Pretendard";
     color: #000;
 }
 
@@ -122,7 +122,7 @@ nav img {
     margin-left: 110px;
 
     font-size: 36px;
-    font-weight: 700px;
+    font-weight: bolder;
     line-height: 45px;
 }
 
@@ -316,10 +316,6 @@ main {
     margin-right: 24px;
     margin-bottom: 19px;
 }
-
-/* .hover-btn {
-    
-} */
 
 .top-btn a :hover {
     content: url(./Final_Project_IMG/scroll-top-btn_hover.png);
