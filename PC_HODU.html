@@ -15,12 +15,20 @@
         if(pattern.test(email) === false) { return false; }
         else { return true; }
     }
+
+    function openModal() {
+        let modal = document.querySelector(".hidden");
+        modal.style.display="block";
+        console.log(modal);
+    }
+
     function check(email) {
         var emailInput = document.getElementById('email');
 
         var email = emailInput.value;
 
         if (emailChk(email)) {
+    
             return true;
         } else {
             alert("이메일을 정확히 입력하세요.")
@@ -30,11 +38,12 @@
 </script>
 
 <body>
-    
+    <!-- ############################### header ################################## -->
     <header id="top">
         <nav>
+            <h1 class="a11y-hidden">호두의 웹페이지입니다.</h1>
             <img src="./Final_Project_IMG/Logo-fin.png" alt="HODU-logo">
-            <p class="link">
+            <p class="links">
                 <span>Home</span><span>About</span><span>Support</span>
             </p>
             <p class="download-link">Download</p>
@@ -57,7 +66,7 @@
     <main>
         <!-- ========================================= -->
         <div class="sec01">
-            <img src="./Final_Project_IMG/고양이 2.png" alt="HODU사진">
+            <img src="./Final_Project_IMG/고양이 2.png" alt="호두가 누워있는 사진">
             <div>
                 <p>
                     Lorem Ipsum is simply<br>
@@ -80,6 +89,7 @@
         </div>
         <!-- ========================================= -->
         <article class="img-groups">
+            <h2 class="a11y-hidden">호두의 사진들</h2>
             <div class="img-group01">
                 <img src="./Final_Project_IMG/g1-1.png" alt="">
                 <img src="./Final_Project_IMG/g1-2.png" alt="">
