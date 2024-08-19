@@ -317,9 +317,12 @@ main {
     margin-bottom: 19px;
 }
 
-.main-bottom img:hover {
-    background-image: url(./Final_Project_IMG/scroll-top-btn_hover.png);
-    background-size: cover;
+/* .hover-btn {
+    
+} */
+
+.top-btn a :hover {
+    content: url(./Final_Project_IMG/scroll-top-btn_hover.png);
 }
 
 /* =========== .subscribe ============ */
@@ -433,4 +436,6 @@ footer img {
     width: 42px;
     height: 42px;
 }
+
+/* =============== .hover-btn ========= */
 
