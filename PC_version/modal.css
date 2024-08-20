@@ -1,7 +1,7 @@
 
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
         
-.modalwrap {
+body {
     width: 600px;
     height: 400px;
 
@@ -50,11 +50,14 @@ body :nth-child(4) {
     box-sizing: border-box;
     width: 183px;
     height: 50px;
+    
     border-radius: 40px;
     margin-top: 38px;
     padding: 15px 29px 15px 29px;
+    
     background-color: #D97652;
 
+    font-family: "Pretendard";
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
