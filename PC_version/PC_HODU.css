@@ -25,6 +25,8 @@ body {
 
 /* =============================== header =========================== */
 header {
+    position: sticky;
+    top: 0px;
     width : 1920px;
     height: 900px;
 
@@ -33,6 +35,8 @@ header {
     background-repeat: no-repeat;
     background-position: left 1185px bottom 0px;
     background-size: 415px;
+
+    z-index: 100;
 }
 
 header nav {
