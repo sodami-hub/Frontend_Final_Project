@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile hodu</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="mobile_hodu.css">
+</head>
+
+<script>
+    const pattern = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-za-z0-9\-]+/;
+
+    function emailChk(email) {
+        if(pattern.test(email) === false) { return false; }
+        else { return true; }
+    }
+
+    function openWindow() {
+        let options = 'width=650, height=450, top=10, left=10';
+        window.open('modal.html','_blank',options);
+    }
+
+    function check(email) {
+        var emailInput = document.getElementById('email');
+
+        var email = emailInput.value;
+
+        if (emailChk(email)) {    
+            openWindow();
+        } else {
+            alert("이메일을 정확히 입력하세요.")
+            event.preventDefault();
+        }
+    }
+</script>
+
+<body>
+    
+    
+
+</body>
+</html>
