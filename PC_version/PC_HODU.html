@@ -33,10 +33,18 @@
             event.preventDefault();
         }
     }
+
+    window.addEventListener('scroll', function() {
+        const element = document.getElementById('top-btn');
+        element.style.position='fixed';
+        element.style.bottom= '180px';
+    })
+
     
 </script>
 
-<body>
+<body id="body">
+    
     <!-- ############################### header ################################## -->
     <header id="top">
         <nav>
@@ -152,12 +160,11 @@
                 </div>
             </section>
 
-            <div class="top-btn">
-                <a href="#main"><img src="../Final_Project_IMG/scroll-top-btn.png" alt="페이지 상단으로 이동"></a>
+            <div class="top-btn" id="top-btn">
+                <a href="#body"><img src="../Final_Project_IMG/scroll-top-btn.png" alt="페이지 상단으로 이동"></a>
             </div>
         </article>
     </main>
-
     <footer>
         <h2 class="a11y-hidden">호두의 SNS관련 링크들</h2>
         <img src="../Final_Project_IMG/Logo-fin.png" alt="호두로고">

@@ -1,4 +1,7 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     width: 1920px;
@@ -443,7 +446,8 @@ input {
 }
 
 /* =================== hashlink : hover- btn==================== */
-.top-btn {
+#top-btn {
+
     width: 50px;
     height: 50px;
 
