@@ -346,7 +346,7 @@ main {
     height: 340px;
     margin-top: 181px;
 
-    background-image: url(/Final_Project_IMG/main_bottom.png);
+    background-image: url(./Final_Project_IMG/main_bottom.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
