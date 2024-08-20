@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     font-family : "Pretendard";
     color: #000;
 }
@@ -20,4 +20,469 @@ body {
     margin: -1px;
     overflow: hidden;
     clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+/* ============================== header =========================== */
+header {
+    width: 390px;
+    height: 794px;
+
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+
+    background-color: #F2E9D8;
+
+    background-image: url(../Final_Project_IMG/고양이\ 1_top.png);
+    background-size: 197px;  
+    background-repeat: no-repeat;
+    background-position: left 98px bottom 0px;  
+
+}
+
+.header-top {
+    width: 390px;
+    height: 76px;
+
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+#logo {
+    width: 92px;
+    height: 28px;
+
+    margin-left: 20px;
+}
+
+#menu-btn {
+    width: 32px;
+    height: 32px;
+
+    margin-left: 226px;
+}
+.header-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-p01 {
+    width: 251px;
+    height: 90px;
+
+    margin-top: 40px;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+}
+
+.header-p02 {
+    width: 270px;
+    height: 98px;
+
+    margin-top: 30px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+}
+
+.header-p03 {
+    width: 114px;
+    height: 40px;
+
+    margin-top: 30px;
+    
+    border-radius: 40px;
+
+    background-color: #D97652;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #FFF;
+    text-align: center;
+}
+
+/* ============================== main =========================== */
+
+/* ==================== main.section.sec01 ====================== */
+.sec01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#누운호두 {
+    width: 326px;
+    height: 190px;
+
+    margin-top: 40px;
+    border-radius: 18px;
+
+    box-shadow: 10px 10px 20px 0px #00000040;
+}
+
+.sec01-p01 {
+    width: 326px;
+    height: 90px;
+
+    margin-top: 40px;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.sec01-p02 {
+    width: 326px;
+    height: 36px;
+
+    margin-top: 20px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.sec01-p03 {
+    width: 326px;
+    height: 60px;
+
+    margin-top: 60px;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: #D97652;
+}
+
+.sec01-p04 {
+    width: 326px;
+    height: 102px;
+
+    margin-top: 30px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
+
+.sec01-p04 span{
+    font-weight: 700;
+    color: #D97652
+}
+
+.img-group {
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:32px
+}
+
+.img-group img{
+    width: 326px;
+    height: 326px;
+
+    border-radius: 18px;
+
+    box-shadow: 10px 10px 20px 0px #00000040;
+}
+
+.showMore-box {
+    width:218px;
+    height: 102px;
+
+    margin-top: 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.showMore-box p {
+    width: 218px;
+    height: 24px;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.showMore-box span {
+    width: 143px;
+    height: 50px;
+
+    border-radius: 40px;
+    background-color: #D97652;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    
+}
+
+/* ==================== main.line ====================== */
+.line {
+    width: 326px;
+    height: 1px;
+
+    margin-top: 60px;
+
+    background-color: #C4C4C4;
+}
+
+
+/* ==================== main.section.sec02 ====================== */
+
+.sec02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 40px;
+}
+
+.sec02-p01 {
+    width: 326px;
+    height: 30px;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.sec02-p02 {
+    width: 326px;
+    height: 40px;
+
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #606367;
+}
+
+#daumRoughmapContainer1724138646373 {
+    width: 326px;
+    height: 132px;
+
+    margin-top: 28px;
+}
+
+/* ==================== main.section.sec03 ====================== */
+
+.sec03 {
+    width: 326px;
+    height: 348px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    border-radius: 18px;
+    background-color: #263140;
+
+    position: relative;
+    top: 40px;
+}
+
+.subscribe-p01 {
+    width: 187px;
+    height: 60px;
+
+    margin-top: 36px;
+    margin-left: 32px;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color:#FFF;
+}
+
+.subscribe-p02 {
+    width: 262px;
+    height: 72px;
+
+    margin-top: 20px;
+    margin-left: 32px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color:#F2E9D8;
+}
+
+
+.input-email {
+    width: 262px;
+    height: 40px;
+
+    margin-top: 30px;
+    margin-left: 32px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-radius: 60px;
+    
+    background-color: #FFF;
+}
+
+.input-email img {
+    width: 18px;
+    height: 18px;
+
+    margin-left: 16px;
+}
+
+input {
+    width: 144px;
+    
+    margin-left: 14px;
+
+    border-width: 0;
+    padding: 0px;
+
+    font-size: 12px;
+}
+
+#subscribe-btn {
+    width: 115px;
+    height: 40px;
+
+    margin-top: 20px;
+    margin-left: 177px;
+
+    border-radius: 40px;
+    background-color: #D97652;
+    
+    padding: 11px 24px 11px 24px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #FFF;
+}
+
+/* ==================== main-bottom ====================== */
+.main-bottom {
+    width: 390px;
+    height: 240px;
+
+    background-image: url(../Final_Project_IMG/main_bottom.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ==================== footer ====================== */
+
+footer{
+    width: 390px;
+    height: 178px;
+
+    display: flex;
+}
+
+.snsLink {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo02 {
+    width: 112px;
+    height: 34px;
+
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.links01 {
+    width: 176px;
+    height: 32px;
+
+    margin-top: 58px;
+    margin-left: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.links01 img {
+    width: 32px;
+    height: 32px;
+}
+
+.links02 {
+    width: 84px;
+    height: 120px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    margin-top: 30px;
+    margin-left: 89px;
+}
+
+.links02 :nth-child(1) {
+    width: 38px;
+    height: 18px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #767676;
+}
+
+.links02 :nth-child(2) {
+    width: 28px;
+    height: 18px;
+
+    margin-top: 16px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #767676;
+}
+
+.links02 :nth-child(3) {
+    width: 51px;
+    height: 18px;
+
+    margin-top: 16px;
+    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #767676;
+}
+
+.links02 :nth-child(4) {
+    width: 84px;
+    height: 18px;
+
+    margin-top: 16px;
+    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #767676;
 }

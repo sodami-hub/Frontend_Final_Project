@@ -12,13 +12,15 @@
     const pattern = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-za-z0-9\-]+/;
 
     function emailChk(email) {
-        if(pattern.test(email) === false) { return false; }
-        else { return true; }
+        if(pattern.test(email) === false) { 
+            return false; }
+        else { 
+            return true; }
     }
 
-    function openWindow() {
+    function openWindow(email) {
         let options = 'width=650, height=450, top=10, left=10';
-        window.open('modal.html','_blank',options);
+        window.open('mobile_modal.html?email='+email,'_blank',options);
     }
 
     function check(email) {
@@ -27,7 +29,7 @@
         var email = emailInput.value;
 
         if (emailChk(email)) {    
-            openWindow();
+            openWindow(email);
         } else {
             alert("이메일을 정확히 입력하세요.")
             event.preventDefault();
@@ -41,7 +43,7 @@
         <h1 class="a11y-hidden">호두의 모바일버전 웹페이지입니다.</h1>
         <div class="header-top">
             <img id="logo" src="../Final_Project_IMG/Logo-fin.png" alt="호두 로고">
-            <img id="logo-btn" src="../Final_Project_IMG/menu.svg" alt="메뉴 버튼">
+            <img id="menu-btn" src="../Final_Project_IMG/menu.svg" alt="메뉴 버튼">
         </div>
         <div class="header-main">
             <p class="header-p01">
@@ -56,9 +58,7 @@
                 standard dummy text ever since the 1500s,<br>
                 when an unknown
             </p>
-            <p class="header-p03">
-                Download
-            </p>
+            <p class="header-p03">Download</p>
         </div>
     </header>
     <!-- ========================= main ========================== -->
@@ -103,6 +103,7 @@
             </div>
         </section>
 
+        <!-- ========== .line =========== -->
         <hr class="line">
 
         <!-- ========== .sec02 =========== -->
@@ -112,24 +113,26 @@
                 Where you’ll be
             </p>
             <p class="sec02-p02">
-                330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea
+                330, Cheomdan-ro, Jeju-si, Jeju-do,<br>
+                Republic of Korea
             </p>
             <!-- 지도가져오기 -->
-            <div id="daumRoughmapContainer1724033929202" class="root_daum_roughmap root_daum_roughmap_landing">
-                <script charset="UTF-8" class="daum_roughmap_loader_script" 
-                            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js">
-                </script>
-                <script charset="UTF-8">
-                    new daum.roughmap.Lander({
-                        "timestamp" : "1724033929202",
-                        "key" : "2kdgk",
-                        "mapWidth" : "1278",
-                        "mapHeight" : "520"
-                    }).render();
-                </script>
-            </div>
-        </section>
-            
+            <!-- 1. 지도 노드 -->
+            <div id="daumRoughmapContainer1724138646373" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp" : "1724138646373",
+                    "key" : "2kea5",
+                    "mapWidth" : "326",
+                    "mapHeight" : "200"
+                }).render();
+            </script>
+
+        <!-- ========== .sec03 =========== -->    
         <section class="sec03"> <!-- position : relative 로 구현할 것-->
             <h2 class="a11y-hidden">호두의 블로그를 구독할 수 있습니다.</h2>
             <div class="subscribe-box">
@@ -147,20 +150,22 @@
                     <img src="../Final_Project_IMG/mail.svg" alt="">
                     <form action="#">
                         <input type="text" id="email" name="email" placeholder="Enter your e-mail address">
-                        <button id="subscribe-btn" type="submit" onclick="return check()">Subscribe</button>
-                    </form>
                 </div>
+                <button id="subscribe-btn" type="submit" onclick="return check()">Subscribe</button>
+                </form>
             </div>
         </section>
+
+        <!-- ========== .main-bottom =========== -->
         <div class="main-bottom">
             <!-- 백그라운드 사진 -->
         </div>
     </main>
-
+    <!-- ========== footer =========== -->
     <footer>
         <h2 class="a11y-hidden">관련된 여러 링크들을 확인할 수 있습니다.</h2>
         <nav class="snsLink">
-            <img src="../Final_Project_IMG/Logo-fin.png" alt="호두로고">
+            <img id="logo02" src="../Final_Project_IMG/Logo-fin.png" alt="호두로고">
             <div class="links01">
                 <img src="../Final_Project_IMG/icon-blog.png" alt="블로그 링크">
                 <img src="../Final_Project_IMG/icon-insta.png" alt="인스타그램 링크">

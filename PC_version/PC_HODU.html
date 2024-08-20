@@ -11,14 +11,16 @@
 <script>
     const pattern = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-za-z0-9\-]+/;
 
+    // email 유효성 검증 함수
     function emailChk(email) {
         if(pattern.test(email) === false) { return false; }
         else { return true; }
     }
 
+    // modal popup - email도 url에 같이 보내줌(get)
     function openWindow(email) {
         let options = 'width=650, height=450, top=10, left=10';
-        window.open('modal.html?email='+email,'_blank',options);
+        window.open('pc_modal.html?email='+email,'_blank',options);
     }
 
     function check(email) {
@@ -33,7 +35,8 @@
             event.preventDefault();
         }
     }
-
+    
+    // 스크롤하면 해시링크 버튼 나타남...
     window.addEventListener('scroll', function() {
         const element = document.getElementById('top-btn');
         element.style.position='fixed';
