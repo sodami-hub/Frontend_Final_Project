@@ -242,8 +242,10 @@ header {
     height: 1px;
 
     margin-top: 60px;
+    
+    border-width: 0px;
+    background: #C4C4C4;
 
-    background-color: #C4C4C4;
 }
 
 
@@ -353,6 +355,7 @@ header {
 
 input {
     width: 144px;
+    height: 16px;
     
     margin-left: 14px;
 

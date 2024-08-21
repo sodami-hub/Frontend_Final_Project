@@ -104,7 +104,7 @@ nav img {
     height: 120px;
 
     font-size: 48px;
-    font-weight: 700;
+    font-weight: bolder;
     line-height: 60px;
 }
 
@@ -113,7 +113,7 @@ nav img {
     height: 86px;
 
     font-size: 16px;
-    font-weight: 400;
+    font-weight: lighter;
     line-height: 20px;
 }
 
@@ -128,7 +128,7 @@ nav img {
     background-color: #D97652;
 
     font-size: 16px;
-    font-weight: 500;
+    font-weight: lighter;
     line-height: 19.09px;
     color: #FFF;
 }
@@ -174,7 +174,7 @@ main {
     margin-left: 110px;
 
     font-size: 16px;
-    font-weight: 400;
+    font-weight: lighter;
     line-height: 20px;
 }
 
@@ -206,7 +206,7 @@ main {
     margin-top: 40px;
 
     font-size: 16px;
-    font-weight: 400;
+    font-weight: lighter;
     line-height: 20px;
     text-align: center;
 }
@@ -293,8 +293,9 @@ main {
     width: 1278px;
     height: 1px;
 
+    border-width: 0px;
     margin-top: 80px;
-    background-color: #C4C4C4;
+    background: #C4C4C4;
 }
 
 /* =========== .sec04 ============ */
