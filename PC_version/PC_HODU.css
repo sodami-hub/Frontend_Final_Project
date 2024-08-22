@@ -28,8 +28,8 @@ body {
 
 /* =============================== header =========================== */
 header {
-    position: sticky;
-    top: 0px;
+    /* position: sticky;
+    top: 0px; */
     width : 1920px;
     height: 900px;
 
@@ -59,7 +59,7 @@ nav img {
     margin-left: 320px;
 }
 
-.links {
+.topLinks {
     width:205px;
     height: 20px;
 
@@ -85,7 +85,7 @@ nav img {
     background-color: #D97652;
 
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 20px;
     color: #FFF;
 }
@@ -104,7 +104,7 @@ nav img {
     height: 120px;
 
     font-size: 48px;
-    font-weight: bolder;
+    font-weight: 700;
     line-height: 60px;
 }
 
@@ -113,7 +113,7 @@ nav img {
     height: 86px;
 
     font-size: 16px;
-    font-weight: lighter;
+    font-weight: 400;
     line-height: 20px;
 }
 
@@ -128,7 +128,7 @@ nav img {
     background-color: #D97652;
 
     font-size: 16px;
-    font-weight: lighter;
+    font-weight: 700;
     line-height: 19.09px;
     color: #FFF;
 }
@@ -138,7 +138,7 @@ main {
     flex-direction: column;
     align-items: center;
 }
-/* =========== .sec01 ============ */
+/* =========== main.section01 ============ */
 .sec01 {
     display: flex;
     justify-content: center;
@@ -178,9 +178,6 @@ main {
     line-height: 20px;
 }
 
-/* =========== .sec02 ============ */
-
-
 .sec02 {
     display: flex;
     flex-direction: column;
@@ -218,7 +215,7 @@ main {
     color:#D97652;
 }
 
-/* =========== .img-groups ============ */
+/* =========== main.section02 ============ */
 .img-groups {
     display: flex;
     flex-direction: column;
@@ -287,7 +284,7 @@ main {
     color: #FFF;
 }
 
-/* =========== hr ============ */
+/* =========== .line ============ */
 
 .line {
     width: 1278px;
@@ -298,7 +295,7 @@ main {
     background: #C4C4C4;
 }
 
-/* =========== .sec04 ============ */
+/* =========== main.section03 ============ */
 
 .sec04 {
     width : 1278px;
@@ -328,8 +325,6 @@ main {
     color: #606367
 }
 
-/* =========== map ============ */
-
 #daumRoughmapContainer1724033929202 {
     width : 1278px;
     height: 520px;
@@ -343,7 +338,7 @@ main {
 }
 
 
-/* =========== .main-bottom ============ */
+/* =========== main.section04 ============ */
 
 .main-bottom {
     display: flex;
@@ -361,8 +356,8 @@ main {
 }
 
 
-/* =========== .subscribe ============ */
 .subscribe {
+
     width: 1280px;
     height: 200px;
 
@@ -377,7 +372,7 @@ main {
     background-color: #263140;
 }
 
-.subscribe h2 {
+.subscribe h4 {
     width: 448px;
     height: 45px;
 
@@ -446,7 +441,7 @@ input {
     color: #FFF;
 }
 
-/* =================== hashlink : hover- btn==================== */
+/* =================== hashlink ==================== */
 #top-btn {
 
     width: 50px;
@@ -456,11 +451,11 @@ input {
     margin-bottom: 19px;
 }
 
-.top-btn a :hover {
+#topBtn :hover {
     content: url(../Final_Project_IMG/scroll-top-btn_hover.png);
 }
 
-/* =========== footer ============ */
+/* =================== footer ================ */
 footer {
     width: 1920px;
     height: 160px;
