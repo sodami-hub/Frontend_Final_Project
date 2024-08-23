@@ -29,11 +29,27 @@
         var email = emailInput.value;
 
         if (emailChk(email)) {    
-            openWindow(email);
+            openModal();
         } else {
             alert("이메일을 정확히 입력하세요.")
             event.preventDefault();
         }
+    }
+
+    // 모달 창 열기
+    function openModal() {
+        const modal = document.querySelector("#modal");
+        modal.style.display="block";
+    }
+
+    // 이메일 전송 및 모달 창 닫기
+    function sendData() {
+        const urlparams = new URL(location.href).searchParams;
+        const email = urlparams.get('email');
+        const modal = document.querySelector("#modal");
+
+        alert('당신의 이메일 주소('+email+')를 서버로 전송합니다.');
+        modal.style.display="none";    
     }
 </script>
 
@@ -43,7 +59,7 @@
         <h1 class="a11y-hidden">호두의 모바일버전 웹페이지입니다.</h1>
         <div class="header-top">
             <img id="logo" src="../Final_Project_IMG/Logo-fin.png" alt="호두 로고">
-            <a href="./mobile_menu.html" onclick="window.open(this.href, '_blank', 'width=290, height=825,top=60,left=250'); return false;">
+            <a href="./mobile_menu.html" onclick="window.open(this.href, '_blank', 'width=290, height=825,top=60px,left=500px'); return false;">
                 <img id="menu-btn" src="../Final_Project_IMG/menu.svg" alt="메뉴 버튼">
             </a>
         </div>
@@ -154,6 +170,26 @@
                 </div>
                 <button id="subscribe-btn" type="submit" onclick="return check()">Subscribe</button>
                 </form>
+
+                <!-- modal -->
+                <div id="modal" class="dialog">
+                    <div class="tb">
+                        <div class="inner">
+                            <div class="modal-in">
+                                <h2 class="a11y-hidden">블로그 구독 서비스 확인 창입니다.</h2>
+                                <img id="modal-img" src="../Final_Project_IMG/modal_cat 1.png" alt="고양이">
+                                <p class="modal-p01">Thank you!</p>
+                                <p class="modal-p02">
+                                    Lorem Ipsum is simply dummy<br>
+                                    text of the printing industry.
+                                </p>
+                                <button id="modal-btn" type="submit" onclick="sendData()">OK! I Love HODU</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal  -->
+
             </div>
         </section>
 

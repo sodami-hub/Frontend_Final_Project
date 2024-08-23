@@ -3,6 +3,7 @@
 body {
     width: 390px;
     height: 4895px;
+    margin: auto;
 
     display: flex;
     flex-direction: column;
@@ -33,7 +34,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items : center;
-
+    
     background-color: #F2E9D8;
 
     background-image: url(../Final_Project_IMG/고양이\ 1_top.png);
@@ -41,6 +42,7 @@ header {
     background-repeat: no-repeat;
     background-position: left 98px bottom 0px;  
 
+    z-index: 1000;
 }
 
 .header-top {
@@ -492,4 +494,88 @@ footer{
     font-weight: 400;
     line-height: 18px;
     color: #767676;
+}
+
+/* ================= modal window ===================== */
+
+.dialog {
+    display:none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.dialog>.tb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.dialog>.tb .inner {
+    width: 300px;
+    height: 300px;
+
+    background-image: url(../Final_Project_IMG/modal_background.png);
+    border-radius: 16px;
+}
+
+.modal-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-img {
+    width: 60px;
+    height: 62px;
+
+    margin-top: 40px;
+}
+
+.modal-p01 {
+    width: 126px;
+    height: 30px;
+    margin-top: 24px;
+    
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color:#D97652;
+}
+
+.modal-p02 {
+    width: 189px;
+    height: 36px;
+    margin-top: 10px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+}
+
+#modal-btn {
+    box-sizing: border-box;
+    width: 158px;
+    height: 40px;
+    
+    border-radius: 40px;
+    margin-top: 28px;
+    padding: 11px 24px 11px 24px;
+    
+    background-color: #D97652;
+
+    font-family: "Pretendard";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #FFF;
 }
