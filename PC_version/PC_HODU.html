@@ -43,12 +43,6 @@
         }
     }
 
-    // 모달 창 열기
-    function openModal() {
-        const modal = document.querySelector("#modal");
-        modal.style.display="block";
-    }
-
     // 이메일 전송 및 모달 창 닫기
     function sendData() {
         const urlparams = new URL(location.href).searchParams;
@@ -59,7 +53,12 @@
         modal.style.display="none";    
     }
 
-    
+    // 모달 창 열기
+    function openModal() {
+        const modal = document.querySelector("#modal");
+        modal.style.display="block";
+    }
+
 </script>
 
 <body id="body">
