@@ -1,43 +1,47 @@
 const pattern = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-za-z0-9\-]+/;
+let emailvalue ="";
 
 function emailChk(email) {
-    if(pattern.test(email) === false) { 
-        return false; }
-    else { 
-        return true; }
+    return pattern.test(email);
 }
 
-function openWindow(email) {
-    let options = 'width=650, height=450, top=10, left=10';
-    window.open('mobile_modal.html?email='+email,'_blank',options);
+// 모달 창 열기/닫기 함수
+function toggleModal(display) {
+    const modal = document.querySelector("#modal");
+    modal.style.display = display;
 }
 
-function check(email) {
-    var emailInput = document.getElementById('email');
+// 이메일 유효성 검사 및 모달 열기
+function check(e) {
+    e.preventDefault(); // 이벤트 기본 동작 방지
+    e.stopPropagation(); // 이벤트 버블링 방지
 
-    var email = emailInput.value;
+    let emailInput = document.getElementById('email');
+    let email = emailInput.value;
 
-    if (emailChk(email)) {    
-        openModal();
-        e.preventDefault();
+    if (emailChk(email)) {  
+        emailvalue= email;  
+        toggleModal('block');
+        waitForEvent(document.getElementById('modal-btn'), 'click').then(() => {
+            toggleModal('none');
+        });
     } else {
-        alert("이메일을 정확히 입력하세요.")
-        e.preventDefault();
+        alert("이메일을 정확히 입력하세요.");
     }
 }
+
 // 이메일 전송 및 모달 창 닫기
 function sendData() {
-    const urlparams = new URL(location.href).searchParams;
-    const email = urlparams.get('email');
-    const modal = document.querySelector("#modal");
-
-    alert('당신의 이메일 주소('+email+')를 서버로 전송합니다.');
-    modal.style.display="none";    
+    alert('당신의 이메일 주소('+emailvalue+')를 서버로 전송합니다.');
+    toggleModal("none");
 }
 
-// 모달 창 열기
-function openModal() {
-    const modal = document.querySelector("#modal");
-    modal.style.display="block";
-    e.preventDefault();
+// 이벤트가 발생할 때까지 기다리는 함수
+function waitForEvent(element, eventName) {
+    return new Promise((resolve) => {
+        element.addEventListener(eventName, function handler(event) {
+            element.removeEventListener(eventName, handler);
+            resolve(event);
+        });
+    });
 }

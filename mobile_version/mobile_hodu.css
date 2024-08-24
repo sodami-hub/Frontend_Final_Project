@@ -498,7 +498,7 @@ footer{
 
 /* ================= modal window ===================== */
 
-.dialog {
+#modal {
     display:none;
     position: fixed;
     left: 0;

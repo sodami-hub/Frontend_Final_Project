@@ -417,7 +417,7 @@ main {
     margin-left: 28px;
 }
 
-input {
+#email {
     width: 184px;
     
     margin-left: 16px;
@@ -487,8 +487,8 @@ footer img {
 
 /* ================= modal window ===================== */
 
-.dialog {
-    display:none;
+#modal {
+    display: none;
     position: fixed;
     left: 0;
     top: 0;
