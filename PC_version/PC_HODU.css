@@ -60,7 +60,7 @@ nav img {
     margin-left: 320px;
 }
 
-.topLinks {
+.top-links {
     width:205px;
     height: 20px;
 
@@ -298,11 +298,11 @@ main {
 
 /* =========== main.section03 ============ */
 
-.sec04 {
+.sec03 {
     width : 1278px;
 }
 
-.sec04-p01 {
+.sec03-p01 {
     width: 263px;
     height: 45px;
 
@@ -314,7 +314,7 @@ main {
     text-align: left;
 }
 
-.sec04-p02 {
+.sec03-p02 {
     width: 395px;
     height: 20px;
 
@@ -339,7 +339,7 @@ main {
 }
 
 
-/* =========== main.section04 ============ */
+/* =========== main. bottom ============ */
 
 .main-bottom {
     display: flex;
