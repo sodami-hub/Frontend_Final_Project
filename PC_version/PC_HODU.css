@@ -217,40 +217,30 @@ main {
 }
 
 /* =========== main.section02 ============ */
+
 .img-groups {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-
-    text-align: center;
 }
 
-.img-groups img {
+.images {
+    width: 1280px;
+    margin-top: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 72px;
+    flex-wrap: wrap;
+}
+
+.images img {
     width: 378px;
     height: 378px;
 
     border-radius: 30px;
     box-shadow: 10px 10px 30px 0px #00000040;
-}
-
-.img-group01 {
-    width: 1278px;
-    height: 378px;
-
-    margin-top: 88px;
-
-    display: flex;
-    gap: 72px;
-}
-
-.img-group02 {
-    width: 1278px;
-    height: 378px;
-    
-    margin-top: 72px;
-        
-    display: flex;
-    gap: 72px;
 }
 
 .img-groups-p01 {
