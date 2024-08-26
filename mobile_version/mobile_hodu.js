@@ -1,5 +1,16 @@
+
+// 이벤트가 발생할 때까지 기다리는 함수
+function waitForEvent(element, eventName) {
+    return new Promise((resolve) => {
+        element.addEventListener(eventName, function handler(event) {
+            element.removeEventListener(eventName, handler);
+            resolve(event);
+        });
+    });
+}
+
+// 이메일 정규식 검사 및 패턴 체크
 const pattern = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-za-z0-9\-]+/;
-let emailvalue ="";
 
 function emailChk(email) {
     return pattern.test(email);
@@ -11,6 +22,7 @@ function toggleModal(display) {
     modal.style.display = display;
 }
 
+let emailvalue ="";
 // 이메일 유효성 검사 및 모달 열기
 function check(e) {
     e.preventDefault(); // 이벤트 기본 동작 방지
@@ -36,12 +48,3 @@ function sendData() {
     toggleModal("none");
 }
 
-// 이벤트가 발생할 때까지 기다리는 함수
-function waitForEvent(element, eventName) {
-    return new Promise((resolve) => {
-        element.addEventListener(eventName, function handler(event) {
-            element.removeEventListener(eventName, handler);
-            resolve(event);
-        });
-    });
-}
