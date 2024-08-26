@@ -438,15 +438,16 @@ main {
 
 /* =================== hashlink ==================== */
 #top-btn {
-
     width: 50px;
     height: 50px;
+    
+    display: none;
 
     margin-right: 24px;
     margin-bottom: 19px;
 }
 
-#topBtn :hover {
+#move-top :hover {
     content: url(../Final_Project_IMG/scroll-top-btn_hover.png);
 }
 

@@ -12,6 +12,7 @@ function waitForEvent(element, eventName) {
 window.addEventListener('scroll', function() {
     const element = document.getElementById('top-btn');
     element.style.position='fixed';
+    element.style.display='block';
     element.style.bottom= '180px';
 })
 
