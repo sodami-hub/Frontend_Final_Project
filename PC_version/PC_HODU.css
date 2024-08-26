@@ -71,7 +71,7 @@ nav img {
     justify-content: space-between;
 
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 20px;
 }
 
@@ -86,7 +86,7 @@ nav img {
     background-color: #D97652;
 
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 200;
     line-height: 20px;
     color: #FFF;
 }
@@ -384,7 +384,7 @@ main {
     margin-top: 18px;
 
     font-size: 14px;
-    font-weight: 400;
+    font-weight: lighter;
     line-height: 18px;
     color : #F2E9D8;
 }
