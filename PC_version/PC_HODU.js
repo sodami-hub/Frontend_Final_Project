@@ -1,3 +1,12 @@
+// 이벤트가 발생할 때까지 기다리는 함수
+function waitForEvent(element, eventName) {
+    return new Promise((resolve) => {
+        element.addEventListener(eventName, function handler(event) {
+            element.removeEventListener(eventName, handler);
+            resolve(event);
+        });
+    });
+}
 
 // 스크롤하면 해시링크 버튼 나타남...
 window.addEventListener('scroll', function() {
@@ -6,9 +15,8 @@ window.addEventListener('scroll', function() {
     element.style.bottom= '180px';
 })
 
+//email 유효성 검증 정규식
 const pattern = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-za-z0-9\-]+/;
-
-let emailvalue ="";
 
 // email 유효성 검증 함수
 function emailChk(email) {
@@ -20,6 +28,8 @@ function toggleModal(display) {
     const modal = document.querySelector("#modal");
     modal.style.display = display;
 }
+
+let emailvalue ="";
 
 // 이메일 유효성 검사 및 모달 열기
 function check(e) {
@@ -46,58 +56,3 @@ function sendData() {
     toggleModal("none");
 }
 
-// 이벤트가 발생할 때까지 기다리는 함수
-function waitForEvent(element, eventName) {
-    return new Promise((resolve) => {
-        element.addEventListener(eventName, function handler(event) {
-            element.removeEventListener(eventName, handler);
-            resolve(event);
-        });
-    });
-}
-
-
-
-
-
-// // 스크롤하면 해시링크 버튼 나타남...
-// window.addEventListener('scroll', function() {
-//     const element = document.getElementById('top-btn');
-//     element.style.position='fixed';
-//     element.style.bottom= '180px';
-// })
-
-// const pattern = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-za-z0-9\-]+/;
-
-// // email 유효성 검증 함수
-// function emailChk(email) {
-//     if(pattern.test(email) === false) { return false; }
-//     else { return true; }
-// }
-
-
-// function check() {
-//     let emailInput = document.getElementById('email');
-//     let email = emailInput.value;
-
-//     if (emailChk(email)) {    
-//         toggleModal('block');
-//     } else {
-//         alert("이메일을 정확히 입력하세요.")
-//     }
-// }
-
-// // 이메일 전송 및 모달 창 닫기
-// function sendData() {
-//     let urlparams = new URL(location.href).searchParams;
-//     let email = urlparams.get('email');
-
-//     alert('당신의 이메일 주소('+email+')를 서버로 전송합니다.');
-//     toggleModal('none');   
-// }
-
-// // 모달 창 열기
-// function toggleModal(display) {
-//     let modal = document.querySelector("#modal");
-//     modal.style.display=display;
-// }
