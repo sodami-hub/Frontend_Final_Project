@@ -40,10 +40,10 @@
 <table>
     <tbody>
         <tr>
-          <th>PC-Version</th>
+          <th colspan="2">PC-Version</th>
         <tr>
         <tr>
-            <td>header</td>
+            <td colspan="2">header</td>
         </tr>
         <tr>
             <td>
@@ -51,39 +51,39 @@
             </td>
         </tr>
         <tr>
-            <td>main.section01</td>
+            <td colspan="2">main.section01</td>
         </tr>
         <tr>
-            <td>
+            <td colspan="2">
                 <img src="pc-main_section01.gif" width="100%">
             </td>
         </tr>
         <tr>
-            <td>main.section02</td>
+            <td colspan="2">main.section02</td>
         </tr>
         <tr>
-            <td>
+            <td colspan="2">
                 <img src="pc-main_section02.gif" width="100%">
             </td>
         </tr>
          <tr>
-            <td>main.section03</td>
+            <td colspan="2">main.section03</td>
         </tr>
         <tr>
-            <td>
+            <td colspan="2">
                 <img src="pc-main_section03.gif" width="100%">
             </td>
         </tr>
          <tr>
-            <td>main.section04</td>
+            <td colspan="2">main.section04</td>
         </tr>
         <tr>
-            <td>
+            <td colspan="2">
                 <img src="pc-main_section04.gif" width="100%">
             </td>
         </tr>
         <tr>
-            <th>Mobile-Version</th>
+            <th colspan="2">Mobile-Version</th>
         </tr>
         <tr>
             <td>header</td>
@@ -94,7 +94,7 @@
                 <img src="mobile-header.gif" width="100%">
             </td>
             <td>
-                <img src="mobile-main_section01_01" width="100%">
+                <img src="mobile-main_section01_01.gif" width="100%">
             </td>
         </tr>
         <tr>
@@ -103,17 +103,17 @@
         </tr>
         <tr>
             <td>
-                <img src="mobile-main_section01_02" width="100%">
+                <img src="mobile-main_section01_02.gif" width="100%">
             </td>
             <td>
-                <img src="mobile-main_section01_03" width="100%">
+                <img src="mobile-main_section01_03.gif" width="100%">
             </td>
         </tr>
         <tr>
             <th colspan="2">footer</th>
         <tr>
-            <td>
-                <img src="mobile-footer" width="100%">
+            <td colspan="2">
+                <img src="mobile-footer.gif" width="100%">
             </td>
         </tr>
     </tbody>
