@@ -25,8 +25,8 @@ body {
 
 /* ============================== header =========================== */
 header {
-    /* position: sticky;
-    top : 0px; */
+    position: sticky;
+    top : 0px;
 
     width: 390px;
     height: 794px;
@@ -524,7 +524,11 @@ footer{
     width: 300px;
     height: 300px;
 
+    background-color: #F2E9D8;
+
     background-image: url(../images/modal_background.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
     border-radius: 16px;
 }
 
