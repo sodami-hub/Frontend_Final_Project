@@ -91,10 +91,10 @@
         </tr>
         <tr>
             <td>
-                <img src="mobile-header.gif" width="100%">
+                <img src="mobile-header.gif" width="50%">
             </td>
             <td>
-                <img src="mobile-main_section01_01.gif" width="100%">
+                <img src="mobile-main_section01_01.gif" width="50%">
             </td>
         </tr>
         <tr>
@@ -103,10 +103,10 @@
         </tr>
         <tr>
             <td>
-                <img src="mobile-main_section01_02.gif" width="100%">
+                <img src="mobile-main_section01_02.gif" width="50%">
             </td>
             <td>
-                <img src="mobile-main_section01_03.gif" width="100%">
+                <img src="mobile-main_section01_03.gif" width="50%">
             </td>
         </tr>
         <tr>
