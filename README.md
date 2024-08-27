@@ -48,7 +48,7 @@
         </tr>
         <tr>
             <td colspan="2">
-		<img src="pc-header.gif" width="100%">
+		<img src="./images/pc-header.gif" width="100%">
             </td>
         </tr>
         <tr>
@@ -56,7 +56,7 @@
         </tr>
         <tr>
             <td colspan="2">
-                <img src="pc-main_section01.gif" width="100%">
+                <img src="./images/pc-main_section01.gif" width="100%">
             </td>
         </tr>
         <tr>
@@ -64,7 +64,7 @@
         </tr>
         <tr>
             <td colspan="2">
-                <img src="pc-main_section02.gif" width="100%">
+                <img src="./images/pc-main_section02.gif" width="100%">
             </td>
         </tr>
          <tr>
@@ -72,15 +72,23 @@
         </tr>
         <tr>
             <td colspan="2">
-                <img src="pc-main_section03.gif" width="100%">
+                <img src="./images/pc-main_section03.gif" width="100%">
             </td>
         </tr>
-         <tr>
+        <tr>
             <td colspan="2">main.section04</td>
         </tr>
         <tr>
             <td colspan="2">
-                <img src="pc-main_section04.gif" width="100%">
+                <img src="./images/pc-main_section04.gif" width="100%">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">footer</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="./images/pc-footer.gif" width="100%">
             </td>
         </tr>
         <tr>
@@ -92,10 +100,10 @@
         </tr>
         <tr align="center" vlign="middle">
             <td width="50%">
-                <img src="mobile-header.gif" width="300">
+                <img src="./images/mobile-header.gif" width="300">
             </td>
             <td width="50%">
-                <img src="mobile-main_section01_01.gif" width="300">
+                <img src="./images/mobile-main_section01_01.gif" width="300">
             </td>
         </tr>
         <tr>
@@ -104,10 +112,10 @@
         </tr>
         <tr align="center" vlign="middle">
             <td>
-                <img src="mobile-main_section01_02.gif" width="300">
+                <img src="./images/mobile-main_section01_02.gif" width="300">
             </td>
             <td>
-                <img src="mobile-main_section02_03.gif" width="300">
+                <img src="./images/mobile-main_section02_03.gif" width="300">
             </td>
         </tr>
         <tr>
@@ -115,10 +123,10 @@
             <th>menu</th>
         <tr>
             <td align="center">
-                <img src="mobile-footer.gif" width="80%">
+                <img src="./images/mobile-footer.gif" width="80%">
             </td>
             <td align="center">
-                <img src="mobile-menu.gif" width="50%">
+                <img src="./images/mobile-menu.gif" width="50%">
             </td>
         </tr>
         <tr>
@@ -130,10 +138,10 @@
         </tr>
         <tr align="center" vlign="middle">
             <td>
-                <img src="pc-modal.gif" width="300">
+                <img src="./images/pc-modal.gif" width="300">
             </td>
             <td>
-                <img src="mobile-modal.gif" width="300">
+                <img src="./images/mobile-modal.gif" width="300">
             </td>
         </tr>
     </tbody>
