@@ -111,10 +111,29 @@
             </td>
         </tr>
         <tr>
-            <th colspan="2">footer</th>
+            <th>footer</th>
+            <th>menu</th>
         <tr>
-            <td colspan="2" align="center">
-                <img src="mobile-footer.gif" width="50%">
+            <td align="center">
+                <img src="mobile-footer.gif" width="80%">
+            </td>
+            <td align="center">
+                <img src="mobile-menu.gif" width="50%">
+            </td>
+        </tr>
+        <tr>
+            <th colsapn="2">modal</th>
+        </tr>
+        <tr>
+            <td>pc modal</td>
+            <td>mobile modal</td>
+        </tr>
+        <tr align="center" vlign="middle">
+            <td>
+                <img src="pc-modal.gif" width="300">
+            </td>
+            <td>
+                <img src="mobile-modal.gif" width="300">
             </td>
         </tr>
     </tbody>
@@ -122,7 +141,28 @@
 
 -------------------------------------------
 ### ✏에러와 에러 해결
+#### 1. figma 화면과 html로 작성한 화면의 폰트 차이 : figma의 font와 관련된 속성을 그대로 가져왓을 때 미묘하게 차이가 발생하는 것으로 보인다.
+#### 2. 모달 창에서의 form 제출
+``` 
+// 이메일 유효성 검사 및 모달 열기
+function check(e) {
+    e.preventDefault(); // 이벤트 기본 동작 방지
+    e.stopPropagation(); // 이벤트 버블링 방지
 
+    let emailInput = document.getElementById('email');
+    let email = emailInput.value;
+
+    if (emailChk(email)) {  
+        emailvalue= email;  
+        toggleModal('block');
+        waitForEvent(document.getElementById('modal-btn'), 'click').then(() => {
+            toggleModal('none');
+        });
+    } else {
+        alert("이메일을 정확히 입력하세요.");
+    }
+}
+```
 
 -------------------------------------------
 ### ✏개발하며 느낀 점
