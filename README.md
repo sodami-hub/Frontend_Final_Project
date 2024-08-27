@@ -89,24 +89,24 @@
             <td>header</td>
             <td>main.section01-01</td>
         </tr>
-        <tr>
-            <td>
-                <img src="mobile-header.gif" width="50%">
+        <tr align="center" vlign="middle">
+            <td width="50%">
+                <img src="mobile-header.gif" width="300">
             </td>
-            <td>
-                <img src="mobile-main_section01_01.gif" width="50%">
+            <td width="50%">
+                <img src="mobile-main_section01_01.gif" width="300">
             </td>
         </tr>
         <tr>
             <td>main.section01-02(일부)</td>
             <td>main.section02</td>
         </tr>
-        <tr>
+        <tr align="center" vlign="middle">
             <td>
-                <img src="mobile-main_section01_02.gif" width="50%">
+                <img src="mobile-main_section01_02.gif" width="300">
             </td>
             <td>
-                <img src="mobile-main_section01_03.gif" width="50%">
+                <img src="mobile-main_section02_03.gif" width="300">
             </td>
         </tr>
         <tr>
