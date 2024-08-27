@@ -10,10 +10,10 @@
 
 -------------------------------------------
 ### ✏개발 환경 및 베포URL
-###### - 개발환경 : Visual Studio Code
-###### - 배포URL :
-pc-version : <https://sodami-hub.github.io/pc_hodu/>
-movile-version : 
+##### - 개발환경 : Visual Studio Code
+##### - 배포URL
+###### pc-version : <https://sodami-hub.github.io/pc_hodu/>
+###### movile-version : <https://sodami-hub.github.io/mobile_hodu/>
 -------------------------------------------
 ### ✏요구사항 명세
 1. 피그마를 참고하여 페이지 구현을 한다.
