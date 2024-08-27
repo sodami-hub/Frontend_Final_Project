@@ -32,8 +32,9 @@
 ### ✏프로젝트 구조와 개발 일정
 📦FRONTEND_FINAL_PROJECT  
  ┣ 📂images  
- ┣ 📂mobile_version 
+ ┣ 📂mobile_version<br> 
  ┣ 📂pc_version
+ 
 
 -------------------------------------------
 ### ✏화면 구성
@@ -46,7 +47,7 @@
             <td colspan="2">header</td>
         </tr>
         <tr>
-            <td>
+            <td colspan="2">
 		<img src="pc-header.gif" width="100%">
             </td>
         </tr>
@@ -112,8 +113,8 @@
         <tr>
             <th colspan="2">footer</th>
         <tr>
-            <td colspan="2">
-                <img src="mobile-footer.gif" width="100%">
+            <td colspan="2" align="center">
+                <img src="mobile-footer.gif" width="50%">
             </td>
         </tr>
     </tbody>
