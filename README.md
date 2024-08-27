@@ -30,9 +30,9 @@
 -------------------------------------------
 ### ✏프로젝트 구조와 개발 일정
 📦FRONTEND_FINAL_PROJECT  
- ┣ 📂Final_Project_IMG  
+ ┣ 📂images  
  ┣ 📂mobile_version 
- ┣ 📂PC_version
+ ┣ 📂pc_version
 
 -------------------------------------------
 ### ✏화면 구성
