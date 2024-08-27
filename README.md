@@ -81,7 +81,41 @@
             <td>
                 <img src="pc-main_section04.gif" width="100%">
             </td>
-        </tr>    
+        </tr>
+        <tr>
+            <th>Mobile-Version</th>
+        </tr>
+        <tr>
+            <td>header</td>
+            <td>main.section01-01</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="mobile-header.gif" width="100%">
+            </td>
+            <td>
+                <img src="mobile-main_section01_01" width="100%">
+            </td>
+        </tr>
+        <tr>
+            <td>main.section01-02(일부)</td>
+            <td>main.section02</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="mobile-main_section01_02" width="100%">
+            </td>
+            <td>
+                <img src="mobile-main_section01_03" width="100%">
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">footer</th>
+        <tr>
+            <td>
+                <img src="mobile-footer" width="100%">
+            </td>
+        </tr>
     </tbody>
 </table>
 
