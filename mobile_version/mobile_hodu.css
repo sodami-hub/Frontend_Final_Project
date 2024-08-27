@@ -37,7 +37,7 @@ header {
     
     background-color: #F2E9D8;
 
-    background-image: url(../Final_Project_IMG/고양이\ 1_top.png);
+    background-image: url(../images/고양이\ 1_top.png);
     background-size: 197px;  
     background-repeat: no-repeat;
     background-position: left 98px bottom 0px;  
@@ -394,7 +394,7 @@ input {
     width: 390px;
     height: 240px;
 
-    background-image: url(../Final_Project_IMG/main_bottom.png);
+    background-image: url(../images/main_bottom.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -524,7 +524,7 @@ footer{
     width: 300px;
     height: 300px;
 
-    background-image: url(../Final_Project_IMG/modal_background.png);
+    background-image: url(../images/modal_background.png);
     border-radius: 16px;
 }
 

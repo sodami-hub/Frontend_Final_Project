@@ -29,8 +29,10 @@
 
 -------------------------------------------
 ### ✏프로젝트 구조와 개발 일정
-
-
+📦FRONTEND_FINAL_PROJECT  
+ ┣ 📂Final_Project_IMG  
+ ┣ 📂mobile_version 
+ ┣ 📂PC_version
 
 -------------------------------------------
 ### ✏화면 구성
@@ -45,7 +47,7 @@
         </tr>
         <tr>
             <td>
-		            <img src="ui1.png" width="100%">
+		        <img src="ui1.png" width="100%">
             </td>
             <td>
                 <img src="ui2.png" width="100%">
