@@ -9,12 +9,14 @@
 ##### 이번 부트 캠프 기간동안 배운 프론트엔드 관련 기술들을 최대한 연습하고 익히도록 한다.
 
 -------------------------------------------
+
 ### ✏개발 환경 및 베포URL
 #### - 개발환경 : Visual Studio Code
 #### - 배포URL
 ##### pc-version : <https://sodami-hub.github.io/pc_hodu/>
 ##### movile-version : <https://sodami-hub.github.io/mobile_hodu/>
 -------------------------------------------
+
 ### ✏요구사항 명세
 1. 피그마를 참고하여 페이지 구현을 한다.<br> [피그마 링크]<https://www.figma.com/design/s9RCnA6dSi3QHHeMDFHKE6/EST-오르미(BE)_HTML%2FCSS%2FJS?node-id=28501-4177&t=gpv3t28WAalztcGv-1>
 2. 모바일 화면도 고려하여 페이지 구현을 한다.
