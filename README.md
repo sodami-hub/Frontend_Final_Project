@@ -3,17 +3,17 @@
 
 ### ✏목표
 #### 보편적 측면에서의 목표
-###### 현대의 개발 환경에서는 프론트엔드와 백엔드 간의 경계가 더욱 흐려지고 있다. 이러한 맥락에서 팀 협업과 개발 역량을 향상시키기 위해 백엔드 개발자가 프론트엔드에 대한 이해를 갖추는 것이 중요하다.
+##### 현대의 개발 환경에서는 프론트엔드와 백엔드 간의 경계가 더욱 흐려지고 있다. 이러한 맥락에서 팀 협업과 개발 역량을 향상시키기 위해 백엔드 개발자가 프론트엔드에 대한 이해를 갖추는 것이 중요하다.
 
 #### 개인적 측면에서의 목표
-###### 이번 부트 캠프 기간동안 배운 프론트엔드 관련 기술들을 최대한 연습하고 익히도록 한다.
+##### 이번 부트 캠프 기간동안 배운 프론트엔드 관련 기술들을 최대한 연습하고 익히도록 한다.
 
 -------------------------------------------
 ### ✏개발 환경 및 베포URL
-##### - 개발환경 : Visual Studio Code
-##### - 배포URL
-###### pc-version : <https://sodami-hub.github.io/pc_hodu/>
-###### movile-version : <https://sodami-hub.github.io/mobile_hodu/>
+#### - 개발환경 : Visual Studio Code
+#### - 배포URL
+##### pc-version : <https://sodami-hub.github.io/pc_hodu/>
+##### movile-version : <https://sodami-hub.github.io/mobile_hodu/>
 -------------------------------------------
 ### ✏요구사항 명세
 1. 피그마를 참고하여 페이지 구현을 한다.
@@ -30,29 +30,41 @@
 
 -------------------------------------------
 ### ✏프로젝트 구조와 개발 일정
+##### 프로젝트 구조
 📦FRONTEND_FINAL_PROJECT  
  ┣ 📂images  
  ┣ 📂mobile_version<br> 
  ┣ 📂pc_version
  
+ ##### 개발 일정
+ 2024.08.19(월) ~ 2024.0828(수)
 
 -------------------------------------------
 ### ✏화면 구성
 <table>
     <tbody>
-        <tr>
+        <tr align ="center">
           <th colspan="2">PC-Version</th>
         <tr>
         <tr>
-            <td colspan="2">header</td>
+            <th colspan="2">
+                header : h1 - 호두의 웹페이지입니다. / h2 - 호두와 관련된 자료를 다운받을 수 있습니다. 
+            </th>
         </tr>
         <tr>
             <td colspan="2">
-		<img src="./images/pc-header.gif" width="100%">
+		        <img src="./images/pc-header.gif" width="100%">
             </td>
         </tr>
         <tr>
-            <td colspan="2">main.section01</td>
+            <th colspan="2">
+                main : h2 - 호두와 관련된 이야기, 사진, 위치, 블로그 가입 서비스를 제공합니다.
+            </th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                main.section01 : h3 - 호두의 이야기</td>
+            </td>
         </tr>
         <tr>
             <td colspan="2">
@@ -60,7 +72,9 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2">main.section02</td>
+            <td colspan="2">
+                main.section02 : h3 - 호두의 사진들과 더보기 서비스
+            </td>
         </tr>
         <tr>
             <td colspan="2">
@@ -68,7 +82,9 @@
             </td>
         </tr>
          <tr>
-            <td colspan="2">main.section03</td>
+            <td colspan="2">
+                main.section03 : h3 - 위치 서비스
+            </td>
         </tr>
         <tr>
             <td colspan="2">
@@ -76,7 +92,9 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2">main.section04</td>
+            <td colspan="2">
+                main.section04 : h3 - 호두의 블로그에 가입 및 구독할 수 있습니다.
+            </td>
         </tr>
         <tr>
             <td colspan="2">
@@ -84,43 +102,57 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2">footer</td>
+            <th colspan="2">
+                footer : h2 - 호두의 SNS관련 링크
+            </th>
         </tr>
         <tr>
             <td colspan="2">
                 <img src="./images/pc-footer.gif" width="100%">
             </td>
         </tr>
-        <tr>
+        <tr align ="center">
             <th colspan="2">Mobile-Version</th>
         </tr>
         <tr>
-            <td>header</td>
-            <td>main.section01-01</td>
+            <td>
+            header<br>
+            h1 - 호두의 모바일버전 웹페이지입니다.<br>
+            h2 - 메뉴버튼과 호두관련 다운로드 링크를 제공합니다.
+            </td>
+            <td>    
+                main : h2 - 호두의 이야기, 사진, 위치, 블로그 구독 서비스를 제공합니다.<br>
+                section01 : h3 - 호두의 이야기
+            </td>
         </tr>
         <tr align="center" vlign="middle">
             <td width="50%">
                 <img src="./images/mobile-header.gif" width="300">
             </td>
             <td width="50%">
-                <img src="./images/mobile-main_section01_01.gif" width="300">
+                <img src="./images/mobile-main_section01.gif" width="300">
             </td>
         </tr>
         <tr>
-            <td>main.section01-02(일부)</td>
-            <td>main.section02</td>
+            <td>
+                main.section02(일부) : h3 - 호두의 사진들과 더보기 서비스
+            </td>
+            <td>
+                main.section03 : h3 - 호두의 위치 정보를 확인할 수 있습니다.<br>
+                main.section04 : h3 - 호두의 블로그를 구독할 수 있습니다.
+            </td>
         </tr>
         <tr align="center" vlign="middle">
             <td>
-                <img src="./images/mobile-main_section01_02.gif" width="300">
+                <img src="./images/mobile-main_section02.gif" width="300">
             </td>
             <td>
-                <img src="./images/mobile-main_section02_03.gif" width="300">
+                <img src="./images/mobile-main_section03_04.gif" width="300">
             </td>
         </tr>
         <tr>
-            <th>footer</th>
-            <th>menu</th>
+            <th>footer : h2 - 호두와 관련된 여러 링크들을 확인할 수 있습니다.</th>
+            <th>menu : h1 - 호두의 모바일 웹 페이지의 메뉴화면 입니다.</th>
         <tr>
             <td align="center">
                 <img src="./images/mobile-footer.gif" width="80%">
@@ -130,10 +162,12 @@
             </td>
         </tr>
         <tr>
-            <th colsapn="2">modal</th>
+            <th colsapn="2" align ="center">
+                modal : h2 - 블로그 구독 서비스 확인 창입니다.
+            </th>
         </tr>
         <tr>
-            <td>pc modal</td>
+            <td >pc modal</td>
             <td>mobile modal</td>
         </tr>
         <tr align="center" vlign="middle">
@@ -182,4 +216,6 @@ function check(e) {
 ```
 
 -------------------------------------------
-### ✏개발하며 느낀 점
+### 😊개발하며 느낀 점
+- 화면을 완성해 나가는 즐거움
+- 좀 더 공부하고 연습을 해야겠다... 특히 javascript...
