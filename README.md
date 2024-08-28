@@ -70,7 +70,8 @@
 | <img src="./images/mobile-main_section04_05.gif" width="50%"> |
 | footer - h2 : 호두와 관련된 여러 링크들을 확인할 수 있습니다. |
 | <img src="./images/mobile-footer.gif" width="50%"> |
-
+| 모달 |
+| <img src="./images/pc-modal.gif" width="40%"> <img src="./images/mobile-modal.gif" width="40%"> |
 
 
 
