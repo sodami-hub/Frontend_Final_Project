@@ -32,13 +32,9 @@ header {
     position: sticky;
     top: 0px;
     width : 1920px;
-    height: 900px;
+    height: 102px;
 
     background-color: #F2E9D8;
-    background-image: url(../images/고양이\ 1_top.png);
-    background-repeat: no-repeat;
-    background-position: left 1185px bottom 0px;
-    background-size: 415px;
 
     z-index: 100;
 }
@@ -71,8 +67,12 @@ nav img {
     justify-content: space-between;
 
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 400;
     line-height: 20px;
+}
+
+.top-links span {
+    cursor :pointer;
 }
 
 .download-link01 {
@@ -86,23 +86,36 @@ nav img {
     background-color: #D97652;
 
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 400;
     line-height: 20px;
     color: #FFF;
+
+    cursor :pointer;
 }
 
 .top {
-    margin-left : 320px;
-    margin-top : 200px;
+    width: 1920px;
+    height: 798px;
+    /* margin-left : 320px;
+    margin-top : 200px; */
     
     display: flex;
     flex-direction: column;
     gap: 40px;    
+
+    background-color: #F2E9D8;
+    background-image: url(../images/고양이\ 1_top.png);
+    background-repeat: no-repeat;
+    background-position: left 1185px bottom 0px;
+    background-size: 415px;
 }
 
 .top-p01 {
     width: 695px;
     height: 120px;
+
+    margin-left : 320px;
+    margin-top: 200px;
 
     font-size: 48px;
     font-weight: 700;
@@ -113,14 +126,18 @@ nav img {
     width: 420px;
     height: 86px;
 
+    margin-left : 320px;
+
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 22px;
 }
 
 .download-link02 {
     width: 140px;
     height: 50px;
+
+    margin-left : 320px;
 
     box-sizing: border-box;
     border-radius: 40px;
@@ -132,6 +149,8 @@ nav img {
     font-weight: 700;
     line-height: 19.09px;
     color: #FFF;
+
+    cursor :pointer;
 }
 /* =============================== main =========================== */
 main {
@@ -175,7 +194,7 @@ main {
     margin-left: 110px;
 
     font-size: 16px;
-    font-weight: lighter;
+    font-weight: 400;
     line-height: 20px;
 }
 
@@ -206,7 +225,7 @@ main {
     margin-top: 40px;
 
     font-size: 16px;
-    font-weight: lighter;
+    font-weight: 400r;
     line-height: 20px;
     text-align: center;
 }
@@ -277,6 +296,8 @@ main {
     font-weight: 700;
     line-height: 20px;
     color: #FFF;
+
+    cursor :pointer;
 }
 
 /* =========== .line ============ */
@@ -434,6 +455,8 @@ main {
     font-size: 16px;
     font-weight: 700;
     color: #FFF;
+
+    cursor :pointer;
 }
 
 /* =================== hashlink ==================== */
@@ -473,10 +496,12 @@ footer img {
 
     display: flex;
     justify-content: space-between;
+
 }
 .footer-link-group img {
     width: 42px;
     height: 42px;
+    cursor :pointer;
 }
 
 
