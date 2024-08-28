@@ -75,8 +75,8 @@ window.addEventListener('scroll', function() {
 | **footer - h2 : 호두의 SNS관련 링크들** |
 | <img src="./images/pc-footer.gif" width="100%"> |
 | **Mobile version** |
-| header.nav - h1 : 호두의 모바일버전 웹페이지입니다.<br>main.section01 - h3 : 호두관련 다운로드 서비스 |
-| <img src="./images/mobile-header_main-sec01.gif" width="50%"> |
+| header.nav - h1 : 호두의 모바일버전 웹페이지입니다(+ menu.html).<br>main.section01 - h3 : 호두관련 다운로드 서비스 |
+| <img src="./images/mobile-header_main-sec01.gif" width="50%"><img src="./images/mobile-menu.gif" width="25%"> |
 | main.section02 - h3 : 호두의 이야기 |
 | <img src="./images/mobile-main_section02.gif" width="50%"> |
 | main.section03 - h3 : 호두의 사진들과 더보기 서비스 |
