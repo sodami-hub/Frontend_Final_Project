@@ -13,53 +13,55 @@
     <!-- ################################ header ################################### -->
     <header>
         <h1 class="a11y-hidden">호두의 모바일버전 웹페이지입니다.</h1>
-        <h2 class="a11y-hidden">웹 페이지의 메뉴와 호두관련 다운로드 링크를 제공합니다.</h2>
-        <div class="header-top">
+        <h2 class="a11y-hidden">웹 페이지의 메뉴링크를 제공합니다.</h2>
+        <nav class="header-top">
             <img id="logo" src="../images/Logo-fin.png" alt="호두 로고">
             <a href="./mobile_menu.html" onclick="window.open(this.href, '_blank', 'width=290, height=825,top=60px,left=500px'); return false;">
                 <img id="menu-btn" src="../images/menu.svg" alt="메뉴 버튼">
             </a>
-        </div>
-        <div class="header-main">
-            <p class="header-p01">
+        </nav>
+    </header>
+    
+    <!-- ################################ main ################################### -->
+
+    <main>
+        <h2 class="a11y-hidden">호두관련 다운로드 서비스와, 이야기, 사진, 위치, 블로그 구독 서비스를 제공합니다.</h2>    
+        
+        <!-- ========== main.section01 =========== -->
+        <section class="sec01">
+            <p class="sec01-p01">
                 Lorem Ipsum is simply<br>
                 dummy text<br>
                 of the printing and
             </p>
-            <p class="header-p02">
+            <p class="sec01-p02">
                 Lorem Ipsum is simply dummy text<br>
                 of the printing and typesetting industry.<br>
                 Lorem Ipsum has been the industry's<br>
                 standard dummy text ever since the 1500s,<br>
                 when an unknown
             </p>
-            <p class="header-p03">Download</p>
-        </div>
-    </header>
-
-    <!-- ################################ main ################################### -->
-    <main>
-        <h2 class="a11y-hidden">호두의 이야기와 사진, 위치 서비스와 블로그 구독 서비스를 제공합니다.</h2>
+            <p class="sec01-p03">Download</p>
+        </section>
         
-        <!-- ========== main.section01 =========== -->
-        
-        <section class="sec01">
+        <!-- ========== main.section02 =========== -->
+        <section class="sec02">
             <h3 class="a11y-hidden">호두의 이야기</h3>
             <img id="누운호두" src="../images/고양이 2.png" alt="누워있는 호두">
-            <p class="sec01-p01">
+            <p class="sec02-p01">
                 Lorem Ipsum is simply<br>
                 dummy text of the printing<br>
                 and dummy text
             </p>
-            <p class="sec01-p02">
+            <p class="sec02-p02">
                 Lorem Ipsum is simply dummy text of the printing<br>
                 and typesetting industry.
             </p>
-            <p class="sec01-p03">
+            <p class="sec02-p03">
                 dummy text of the printing<br>
                 and dummy
             </p>
-            <p class="sec01-p04">
+            <p class="sec02-p04">
                 Lorem Ipsum is simply <span>dummy text</span> of the<br>
                 printing and typesetting industry.<br>
                 Lorem Ipsum has been the industry's<br>
@@ -68,9 +70,8 @@
             </p>
         </section>
 
-        <!-- ========== main.section02 =========== -->
-
-        <section class="sec02">
+        <!-- ========== main.section03 =========== -->
+        <section class="sec03">
             <h3 class="a11y-hidden">호두의 사진들과 사진 더보기 서비스</h3>
             <div class="img-group">
                 <img id="img01" src="../images/g1-1.png" alt="호두사진01">
@@ -92,14 +93,14 @@
         
         <hr class="line">
 
-        <!-- ========== main.section03 =========== -->
+        <!-- ========== main.section04 =========== -->
         
-        <section class="sec03">
+        <section class="sec04">
             <h3 class="a11y-hidden">호두의 위치 정보를 확인할 수 있습니다.</h2>
-            <p class="sec03-p01">
+            <p class="sec04-p01">
                 Where you’ll be
             </p>
-            <p class="sec03-p02">
+            <p class="sec04-p02">
                 330, Cheomdan-ro, Jeju-si, Jeju-do,<br>
                 Republic of Korea
             </p>
@@ -114,9 +115,9 @@
                 }).render();
             </script>
 
-        <!-- ========== main.section04 =========== -->
+        <!-- ========== main.section05 =========== -->
         
-        <section class="sec04"> 
+        <section class="sec05"> 
             <h3 class="a11y-hidden">호두의 블로그를 구독할 수 있습니다.</h2>
             <div class="subscribe-box">
                 <p class="subscribe-p01">

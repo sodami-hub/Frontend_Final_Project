@@ -41,6 +41,8 @@ div img {
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
+
+    cursor: pointer;
 }
 .p02 {
     width: 45px;
@@ -52,6 +54,8 @@ div img {
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
+
+    cursor: pointer;
 }
 .p03 {
     width: 45px;
@@ -63,6 +67,8 @@ div img {
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
+
+    cursor: pointer;
 }
 
 .p04 {
@@ -81,4 +87,5 @@ div img {
     line-height: 40px;
     text-align: center;
     
+    cursor: pointer;
 }
