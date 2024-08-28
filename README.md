@@ -178,7 +178,7 @@
                 <img src="./images/mobile-modal.gif" width="300">
             </td>
         </tr>
-</table>
+<!-- </table> -->
 <br>
 
 -------------------------------------------
