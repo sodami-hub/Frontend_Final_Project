@@ -16,7 +16,7 @@
 ##### movile-version : <https://sodami-hub.github.io/mobile_hodu/>
 -------------------------------------------
 ### ✏요구사항 명세
-1. 피그마를 참고하여 페이지 구현을 한다.
+1. 피그마를 참고하여 페이지 구현을 한다. 피그마 링크 <https://www.figma.com/design/s9RCnA6dSi3QHHeMDFHKE6/EST-오르미(BE)_HTML%2FCSS%2FJS?node-id=28501-4177&t=gpv3t28WAalztcGv-1>
 2. 모바일 화면도 고려하여 페이지 구현을 한다.
 3. 스크롤시 헤더가 고정되게 한다.(단, 처음에는 고정된 상태가 아니다.)
 4. 스크롤 탑 버튼을 구현한다.<br>
