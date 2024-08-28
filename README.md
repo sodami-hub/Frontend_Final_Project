@@ -46,7 +46,7 @@
     <tbody>
         <tr align ="center">
           <th colspan="2">PC-Version</th>
-        <tr>
+    	</tr>
         <tr>
             <th colspan="2">
                 header : h1 - 호두의 웹페이지입니다. / h2 - 호두와 관련된 자료를 다운받을 수 있습니다. 
@@ -168,7 +168,7 @@
             </th>
         </tr>
         <tr>
-            <td >pc modal</td>
+            <td>pc modal</td>
             <td>mobile modal</td>
         </tr>
         <tr align="center" vlign="middle">
