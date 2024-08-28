@@ -57,9 +57,21 @@
 | <img src="./images/pc-main_section04.gif" width="100%"> |
 | main.section05 - h3 : 호두의 블로그 가입 및 구독 |
 | <img src="./images/pc-main_section05.gif" width="100%"> |
-| **footer - h2 : 호두의 SNS관련 링크들*** |
+| **footer - h2 : 호두의 SNS관련 링크들** |
 | <img src="./images/pc-footer.gif" width="100%"> |
 | **Mobile version** |
+| header.nav - h1 : 호두의 모바일버전 웹페이지입니다.<br>main.section01 - h3 : 호두관련 다운로드 서비스 |
+| <img src="./images/mobile-header_main-sec01.gif" width="50%"> |
+| main.section02 - h3 : 호두의 이야기 |
+| <img src="./images/mobile-main_section02.gif" width="50%"> |
+| main.section03 - h3 : 호두의 사진들과 더보기 서비스 |
+| <img src="./images/mobile-main_section03.gif" width="50%"> |
+| main.section04 - h3 : 호두의 위치 정보 서비스<br>main.section05 -  h3 : 호두의 블로그를 구독할 수 있습니다. |
+| <img src="./images/mobile-main_section04_05.gif" width="50%"> |
+| footer - h2 : 호두와 관련된 여러 링크들을 확인할 수 있습니다. |
+| <img src="./images/mobile-footer.gif" width="50%"> |
+
+
 
 
 ### ✏에러와 에러 해결
