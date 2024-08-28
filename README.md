@@ -45,10 +45,10 @@
 | PC version |
 | header - h1 : 호두의 웹페이지입니다.|
 | :---: |
-| <img src="./images/pc-header.gif" width="100%"> |
+| <img src="" width="100%"> |
 | main - h2 : 호두와 관련된 이야기, 사진, 위치, 블로그 가입 서비스를 제공합니다. |
 | main.section01 - h3 : 호두와 관련된 자료를 다운받을 수 있습니다.|
-| <img src="./images/pc-main_section01.gif" width="100%"> |
+| <img src="" width="100%"> |
 
 
 
