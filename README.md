@@ -54,7 +54,7 @@
         </tr>
         <tr>
             <td colspan="2">
-		        <img src="./images/pc-header.gif" width="100%">
+		<img src="./images/pc-header.gif" width="100%">
             </td>
         </tr>
         <tr>
@@ -184,6 +184,8 @@
 <br>
 
 -------------------------------------------
+<br>
+
 ### ✏에러와 에러 해결
 #### 😢개인프로젝트 기간동안 해결하지 못한 문제들에 대해서 정리해보았습니다.
 ##### 1. figma 화면과 html로 작성한 화면의 폰트 차이 : figma의 font-weight 속성을 그대로 가져왔을 때 차이가 발생하는 것으로 보인다.
