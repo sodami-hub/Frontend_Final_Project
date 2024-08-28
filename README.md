@@ -43,7 +43,6 @@
 ### ✏화면 구성<br>
 
 <table>
-    <tbody>
         <tr align ="center">
           <th colspan="2">PC-Version</th>
     	</tr>
@@ -82,7 +81,7 @@
                 <img src="./images/pc-main_section02.gif" width="100%">
             </td>
         </tr>
-         <tr>
+        <tr>
             <td colspan="2">
                 main.section03 : h3 - 위치 서비스
             </td>
@@ -179,7 +178,6 @@
                 <img src="./images/mobile-modal.gif" width="300">
             </td>
         </tr>
-    </tbody>
 </table>
 <br>
 
