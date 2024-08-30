@@ -14,7 +14,7 @@
 #### - 개발환경 : Visual Studio Code
 #### - 배포URL
 ##### pc-version : <https://sodami-hub.github.io/pc_hodu/>
-##### movile-version : <https://sodami-hub.github.io/mobile_hodu/>
+##### mobile-version : <https://sodami-hub.github.io/mobile_hodu/>
 -------------------------------------------
 
 ### ✏요구사항 명세
@@ -25,21 +25,6 @@
   a. 스크롤 탑 버튼은 스크롤시 나타난다.<br>
   b. 스크롤 탑 버튼은 푸터 아래로 내려가지 않는다.<br>
   c. 스크롤 탑 버튼을 누르면 스크롤이 최상단으로 올라갑니다.(단, 부드럽게 올라가야 된다.)<br>
-```
-// .css
-html {
-    scroll-behavior: smooth;
-}
-
-// .js
-window.addEventListener('scroll', function() {
-    const element = document.getElementById('top-btn');
-    element.style.position='fixed';
-    element.style.display='block';
-    element.style.bottom= '180px';
-})
-```
-
 5. 구독하기 모달창<br>
   a. 이메일을 입력하고 ```Subscribe``` 버튼을 클릭하면 모달창이 나타난다.<br>
   b. 이메일 유효성 검사를 진행해야 한다.(값이 들어가지 않거나 이메일 형식이 유효하지 않으면 alert 창으로 경고 문구가 떠야 된다.)<br>
@@ -53,9 +38,13 @@ window.addEventListener('scroll', function() {
  ┣ 📂mobile_version<br> 
  ┣ 📂pc_version
 
--   개발 일정<br>
- 2024.08.19(월) ~ 2024.08.28(수)
-
+  -   개발 일정<br>
+  🙌1차 개발  
+  일정 : 2024.08.19(월) ~ 2024.08.28(수) // 08.29(목) 1차 배포 <br>
+  목표 : PC버전과 모바일버전의 화면을 각각 HTML/CSS, Javascript로 구현한다.<br>
+  🙌2차 개발<br>
+    일정 : 2024.08.31(토) ~  <br>
+목표 : 반응형웹으로 서비스를 배포한다.
 -------------------------------------------
 ### ✏화면 구성<br>
 
@@ -104,26 +93,6 @@ window.addEventListener('scroll', function() {
     - 다음 이벤트가 발생할 때까지 대기하는 함수를 통해서 모달창이 자동으로 닫히는 현상을 막음
     - 그러나 이벤트를 막았기 때문에 input에 입력한 email 값을 전달할 수 없는 문제가 발생.
     - email 값을 javascript의 전역변수에 넣어서 전달하는 것처럼 구현.
-``` 
-// 이메일 유효성 검사 및 모달 열기
-function check(e) {
-    e.preventDefault(); // 이벤트 기본 동작 방지
-    e.stopPropagation(); // 이벤트 버블링 방지
-
-    let emailInput = document.getElementById('email');
-    let email = emailInput.value;
-
-    if (emailChk(email)) {  
-        emailvalue= email;  
-        toggleModal('block');
-        waitForEvent(document.getElementById('modal-btn'), 'click').then(() => {
-            toggleModal('none');
-        });
-    } else {
-        alert("이메일을 정확히 입력하세요.");
-    }
-}
-```
 
 -------------------------------------------
 ### 😊개발하며 느낀 점
