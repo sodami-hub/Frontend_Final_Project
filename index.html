@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <title>랜딩페이지</title>
+    <link rel="stylesheet" href="./responsive/reset.css">
+    <link rel="stylesheet" href="./responsive/responsive.css">
+    <script src="./responsive/responsive.js"></script>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav">
+            <h1 class="a11y-hidden">호두의 웹페이지입니다.</h1>
+            <img id="header-logo" src="../images/Logo-fin.png" alt="호두로고">
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" id="sidebar-open">
+                <img src="./images/menu.svg" alt="menu-button">
+            </label>
+            <div class="link-container">
+                <label for="sidebar-active" id="sidebar-close">
+                    <img src="../images/arrow-right.svg" alt="close-button">
+                </label>
+                <ul class="top-links">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Support</li>
+                </ul>
+                <button>Download</button>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <h2 class="a11y-hidden">호두와 관련된 이야기, 사진, 위치, 블로그 가입 서비스를 제공합니다.</h2>
+
+        <!-- ==================  main. section01  ======================= -->
+        <article class="sec01">
+            <h3 class="a11y-hidden">호두와 관련된 자료를 다운받을 수 있습니다.</h3>
+            <div class="sec01-text">
+                <p class="sec01-p01">
+                    Lorem Ipsum is simply<br>
+                    <span>dummy text</span> of the printing and
+                </p>
+                <p class="sec01-p02">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown
+                </p>
+                <p class="download-link02">Download</p>
+            </div>
+            <div class="sec01-img">
+                <img src="../images/고양이_1_top.png" alt="호두사진">
+            </div>
+        </article>
+
+        <!-- ==================  main. section02  ======================= -->
+        <section class="hodu-story">
+            <h3 class="a11y-hidden">호두의 이야기.</h3>
+            <div class="sec02">
+                <img src="../images/고양이_2.png" alt="호두가 누워있는 사진">
+                <div>
+                    <p class="sec02-p01">
+                        Lorem Ipsum is simply<br>
+                        dummy text of the printing<br>
+                        and dummy text
+                    </p>
+                    <p class="sec02-p02">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting<br>
+                        industry.
+                    </p>
+                </div>
+            </div>
+            <div class="sec02-02">
+                <p class="sec02-p03">dummy text of the printing and dummy</p>
+                <p class="sec02-p04">
+                    Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                </p>
+            </div>
+        </section>
+
+        <!-- ==================  main. section03  ======================= -->
+        <section class="img-groups">
+            <h3 class="a11y-hidden">호두의 사진들과 더보기 서비스</h3>
+                <div class="images">
+                    <img src="./images/g1-1.png" alt="">
+                    <img src="./images/g1-2.png" alt="">
+                    <img src="./images/g1-3.png" alt="">
+                    <img src="./images/g2-1.png" alt="">
+                    <img src="./images/g2-2.png" alt="">
+                    <img src="./images/g2-3.png" alt="">
+                </div>
+                <div class="img-groups-p01">
+                    <p>
+                        Continue exploring HODU
+                    </p>
+                    <p class="show-more-btn">
+                        Show more
+                    </p>
+                </div>
+        </section>
+
+        <!-- ======================= .line ========================= -->
+        <div class="line"></div>
+
+        <!-- ======================= main. section04 ========================= -->
+        <section class="locationService">
+            <h3 class="a11y-hidden">위치 서비스</h3>
+            <div class="sec04">
+                <p class="sec04-p01">Where you'll be</p>
+                <p class="sec04-p02">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+            </div>
+            <div id="daumRoughmapContainer1724033929202" class="root_daum_roughmap root_daum_roughmap_landing">
+                <script charset="UTF-8" class="daum_roughmap_loader_script"
+                        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js">
+                </script>
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp" : "1724033929202",
+                        "key" : "2kdgk",
+                        "mapWidth" : "1278",
+                        "mapHeight" : "520"
+                    }).render();
+                </script>
+            </div>
+        </section>
+
+        <!-- ============================= main. section05 ===================================== -->
+        <section class="sec05">
+            <h3 class="a11y-hidden">페이지의 하단부입니다. 호두의 블로그에 가입 및 구독할 수 있습니다. </h3>
+                <section class="subscribe">
+                    <div>
+                        <h4>Subscribe to our Blog post</h4>
+                        <p class="subscribe-p01">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                            Lorem Ipsum has been the industry's standard dummy text
+                        </p>
+                    </div>
+                    <div class="input-email">
+                        <img id ="email-img" src="./images/mail.svg" alt="">
+                        <form method="get">
+                            <input type="text" id="email" name="email" placeholder="Enter your e-mail address">
+                            <button id="subscribe-btn" type="submit" onclick="check(event)">Subscribe</button>
+                        </form>
+                    </div>
+                        <!-- modal -->
+                        <div id="modal" class="dialog">
+                            <div class="tb">
+                                <div class="inner">
+                                    <div class="modal-in">
+                                        <h2 class="a11y-hidden">블로그 구독 서비스 확인 창입니다.</h2>
+                                        <img id="modal-img" src="./images/modal_cat 1.png" alt="고양이">
+                                        <p class="modal-p01">Thank you!</p>
+                                        <p class="modal-p02">Lorem Ipsum is simply dummy text of the printing industry.</p>
+                                        <button id="modal-btn" type="submit" onclick="sendData()">OK! I Love HODU</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal  -->
+                </section>
+                <div class="top-btn" id="top-btn">
+                    <a id="move-top" href="#main"><img src="./images/scroll-top-btn.png" alt="페이지 상단으로 이동"></a>
+                </div>
+        </section>
+    </main>
+
+    <!-- ###################################### footer ################################################### -->
+
+    <footer>
+        <h2 class="a11y-hidden">호두의 SNS관련 링크들</h2>
+        <img src="./images/Logo-fin.png" alt="호두로고">
+        <div class="footer-link-group">
+            <img src="./images/icon-blog.png" alt="블로그아이콘">
+            <img src="./images/icon-insta.png" alt="인스타아이콘">
+            <img src="./images/icon-facebook.png" alt="페이스북아이콘">
+            <img src="./images/icon-youtube.png" alt="유투브아이콘">
+        </div>
+    </footer>
+</body>
+</html>

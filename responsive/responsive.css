@@ -4,16 +4,15 @@ html {
 }
 
 body {
-    width: 1920px;
-    height: 4239px;
-    margin:auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
     font-family : "Pretendard";
     color: #000;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* =========================== hidden element ======================= */
@@ -26,58 +25,63 @@ body {
     clip-path: polygon(0 0, 0 0, 0 0);
 }
 
+#header {
+    position:sticky;
+    top: 0;
 
-/* =============================== header =========================== */
-header {
-    position: sticky;
-    top: 0px;
-    width : 1920px;
     height: 102px;
-
+    display: flex;
     background-color: #F2E9D8;
-
     z-index: 100;
 }
 
-header nav {
-    width : 1920px;
-    height: 102px;
+#header-logo {
+    width: 130px;
+    height: 40px;
 
+    margin-right: 756px;
+}
+
+#nav {
+    width: 100vw;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
 
-nav img {
-    width: 130px;
-    height: 40px;
-    
-    margin-left: 320px;
+#sidebar-active {
+    display: none;
 }
 
-.top-links {
-    width:205px;
-    height: 20px;
+#sidebar-open, #sidebar-close {
+    width: 30px;
+    height: 30px;
 
-    margin-left : 756px;
-    margin-right: 49px;
+    display: none;
+}
 
+.link-container {
     display: flex;
-    justify-content: space-between;
-
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.top-links span {
-    cursor :pointer;
+.link-container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
 }
 
-.download-link01 {
+.link-container button {
     width: 140px;
     height: 50px;
+
+    margin-left: 49px;
 
     box-sizing: border-box;
     border-radius: 40px;
@@ -89,53 +93,55 @@ nav img {
     font-weight: 400;
     line-height: 20px;
     color: #FFF;
-
-    cursor :pointer;
 }
-/* =============================== main =========================== */
+/* =========================== main ======================= */
 
 main {
+
+    width:100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 /* =========== main.section01 ============ */
-.top {
-    width: 1920px;
+.sec01 {
+
+    width:100%;
     height: 798px;
-    /* margin-left : 320px;
-    margin-top : 200px; */
-    
     display: flex;
-    flex-direction: column;
-    gap: 40px;    
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap:170px;
 
     background-color: #F2E9D8;
-    background-image: url(../images/고양이_1_top.png);
-    background-repeat: no-repeat;
-    background-position: left 1185px bottom 0px;
-    background-size: 415px;
 }
 
-.top-p01 {
+.sec01-text{
+    display : flex;
+    flex-direction: column;
+
+    gap:40px
+}
+
+.sec01-p01 {
     width: 695px;
     height: 120px;
-
-    margin-left : 320px;
-    margin-top: 200px;
 
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
 }
 
-.top-p02 {
+.sec01-p02 {
+
     width: 420px;
     height: 86px;
 
-    margin-left : 320px;
-
+    text-align: left;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -144,8 +150,6 @@ main {
 .download-link02 {
     width: 140px;
     height: 50px;
-
-    margin-left : 320px;
 
     box-sizing: border-box;
     border-radius: 40px;
@@ -161,6 +165,10 @@ main {
     cursor :pointer;
 }
 
+.sec01-img {
+    margin-top: 25px;
+}
+
 /* =========== main.section02 ============ */
 .sec02 {
     display: flex;
@@ -171,7 +179,6 @@ main {
 }
 
 .sec02 img {
-    width : 660px;
     height: 390px;
 
     border-radius: 30px;
@@ -179,7 +186,7 @@ main {
 }
 
 .sec02-p01 {
-    width: 510px;
+
     height: 135px;
 
     margin-left: 110px;
@@ -190,7 +197,6 @@ main {
 }
 
 .sec02-p02 {
-    width: 510px;
     height: 40px;
 
     margin-top: 30px;
@@ -209,9 +215,8 @@ main {
 }
 
 .sec02-p03 {
-    width: 875px;
     height: 60px;
-    
+
     margin-top: 120px;
 
     font-size: 48px;
@@ -222,13 +227,12 @@ main {
 }
 
 .sec02-p04 {
-    width: 710px;
     height: 42px;
-    
+
     margin-top: 40px;
 
     font-size: 16px;
-    font-weight: 400r;
+    font-weight: 400;
     line-height: 20px;
     text-align: center;
 }
@@ -251,9 +255,9 @@ main {
 
 .images {
     width: 1280px;
-    
+
     margin-top: 78px;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -270,7 +274,6 @@ main {
 }
 
 .img-groups-p01 {
-    width: 290px;
     height: 108px;
 
     margin-top: 100px;
@@ -294,7 +297,7 @@ main {
     padding: 15px 29px 15px 29px;
 
     background-color: #D97652;
-    
+
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -316,12 +319,8 @@ main {
 
 /* =========== main.section04 ============ */
 
-.sec04 {
-    width : 1278px;
-}
 
 .sec04-p01 {
-    width: 263px;
     height: 45px;
 
     margin-top: 68px;
@@ -333,7 +332,6 @@ main {
 }
 
 .sec04-p02 {
-    width: 395px;
     height: 20px;
 
     margin-top: 20px;
@@ -349,7 +347,6 @@ main {
     height: 520px;
 
     margin-top: 48px;
-    margin-left: 0px;
 
     border-radius: 12px;
 
@@ -423,7 +420,7 @@ main {
     align-items: center;
 
     border-radius: 60px;
-    
+
     background-color: #FFF;
 }
 
@@ -436,7 +433,7 @@ main {
 
 #email {
     width: 184px;
-    
+
     margin-left: 16px;
 
     border-width: 0;
@@ -447,11 +444,11 @@ main {
     width: 135px;
     height: 50px;
 
-    margin-left: 137px;
+    margin-left: 130px;
 
     border-radius: 40px;
     background-color: #D97652;
-    
+
     padding: 15px 29px 15px 29px;
 
     font-size: 16px;
@@ -465,7 +462,7 @@ main {
 #top-btn {
     width: 50px;
     height: 50px;
-    
+
     display: none;
 
     margin-right: 24px;
@@ -478,7 +475,7 @@ main {
 
 /* =================== footer ================ */
 footer {
-    width: 1920px;
+    width: 100vw;
     height: 160px;
 
     display: flex;
@@ -512,22 +509,22 @@ footer img {
 #modal {
     width: 100%;
     height: 100%;
-    
+
     display: none;
-    
+
     position: fixed;
     left: 0;
     top: 0;
-    
+
     z-index: 1000;
-    
+
     background: rgba(0, 0, 0, 0.4);
 }
 
 .dialog>.tb {
     width: 100%;
     height: 100%;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -560,7 +557,7 @@ footer img {
     height: 46px;
 
     margin-top: 24px;
-    
+
     font-size: 36px;
     font-weight: 700;
     line-height: 45px;
@@ -571,7 +568,7 @@ footer img {
 .modal-p02 {
     width: 365px;
     height: 18px;
-    
+
     margin-top: 12px;
 
     font-size: 14px;
@@ -583,12 +580,12 @@ footer img {
 #modal-btn {
     width: 183px;
     height: 50px;
-    
+
     box-sizing: border-box;
     border-radius: 40px;
     margin-top: 38px;
     padding: 15px 29px 15px 29px;
-    
+
     background-color: #D97652;
 
     font-family: "Pretendard";
@@ -596,4 +593,199 @@ footer img {
     font-weight: 700;
     line-height: 20px;
     color: #FFF;
+}
+
+
+
+
+/* =================== responsive ==================== */
+
+@media (max-width: 500px) {
+    body {
+        font-family : "Pretendard";
+        color: #000;
+
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #header {
+    clamp(150px, 100%, 920px);
+        height: 76px;
+        color: #F2E9D8;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap :226px;
+    }
+
+    #header-logo {
+        width: 92px;
+        height: 28px;
+
+        margin-left: 0;
+        margin-right:0;
+    }
+
+
+    #sidebar-open {
+        width :32px;
+        height: 32px;
+
+        display: block;
+
+        margin-right: 0;
+    }
+
+    .link-container {
+        width: 289px;
+        height: 820px;
+
+        position:fixed;
+        top:0;
+        right:0;
+
+        z-index: 100;
+        background-color: #263140;
+
+        display: none;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: flex-start;
+
+    }
+
+    .link-container ul{
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+
+        margin-left: 50px;
+        margin-top: 66px;
+    }
+
+    .top-links li {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+
+        display: block;
+    }
+
+    .top-links :nth-child(1) {
+        padding-right: 12px;
+    }
+    .top-links :nth-child(2) {
+        padding-right: 12px;
+    }
+
+    .link-container button {
+        width: 114px;
+        height: 40px;
+
+        margin-left: 40px;
+        margin-top: 50px;
+
+        box-sizing: border-box;
+        border-radius: 40px;
+        padding: 11px 24px 11px 24px;
+
+        background-color: #D97652;
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #FFF;
+    }
+
+    #sidebar-close{
+
+        margin-left: 20px;
+        margin-top: 22px;
+        display: block;
+    }
+
+    #sidebar-active:checked ~ .link-container {
+        display: flex;
+    }
+
+    #main {
+    clamp(150px, 50%, 500px);
+    }
+
+    .sec01 {
+        height: 794px;
+
+        margin-top: 40px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        background-color: #F2E9D8;
+
+    }
+
+    .sec01-text{
+        display : flex;
+        flex-direction: column;
+
+        gap:30px
+    }
+
+    .sec01-p01 {
+        width: 695px;
+        height: 120px;
+
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+
+    .sec01-p01 span {
+        display: block;
+    }
+
+    .sec01-p02 {
+
+        width: 420px;
+        height: 86px;
+
+        text-align: left;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .download-link02 {
+        width: 114px;
+        height: 40px;
+
+        box-sizing: border-box;
+        border-radius: 40px;
+        padding: 11px 24px 11px 24px;
+
+        background-color: #D97652;
+
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        color: #FFF;
+
+        cursor :pointer;
+    }
+
+    footer {
+        clamp(150px, 100%, 920px);
+    }
+
 }
