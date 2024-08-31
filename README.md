@@ -15,6 +15,7 @@
 #### - 배포URL
 ##### pc-version : <https://sodami-hub.github.io/pc_hodu/>
 ##### mobile-version : <https://sodami-hub.github.io/mobile_hodu/>
+##### 👍반응형-web👍 : https://sodami-hub.github.io/Frontend_Final_Project/
 -------------------------------------------
 
 ### ✏요구사항 명세

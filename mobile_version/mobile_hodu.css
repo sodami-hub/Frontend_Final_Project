@@ -73,7 +73,7 @@ header {
 .sec01 {
     width: 390px;
     height: 718px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content:baseline;
@@ -82,7 +82,7 @@ header {
     background-color: #F2E9D8;
 
     background-image: url(../images/고양이_1_top.png);
-    background-size: 197px;  
+    background-size: 197px;
     background-repeat: no-repeat;
     background-position: left 98px bottom 0px;
 }
@@ -116,7 +116,7 @@ header {
     height: 40px;
 
     margin-top: 30px;
-    
+
     border-radius: 40px;
 
     background-color: #D97652;
@@ -236,7 +236,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
+
     cursor: pointer;
 }
 
@@ -261,7 +261,7 @@ header {
     line-height: 50px;
     text-align: center;
     color: #FFF;
-    
+
 }
 
 /* ==================== main.line ====================== */
@@ -270,7 +270,7 @@ header {
     height: 1px;
 
     margin-top: 60px;
-    
+
     border-width: 0px;
     background: #C4C4C4;
 
@@ -370,7 +370,7 @@ header {
     align-items: center;
 
     border-radius: 60px;
-    
+
     background-color: #FFF;
 }
 
@@ -384,7 +384,7 @@ header {
 input {
     width: 144px;
     height: 16px;
-    
+
     margin-left: 14px;
 
     border-width: 0;
@@ -402,7 +402,7 @@ input {
 
     border-radius: 40px;
     background-color: #D97652;
-    
+
     padding: 11px 24px 11px 24px;
 
     font-family: "Pretendard";
@@ -468,7 +468,7 @@ footer{
 .links02 {
     width: 84px;
     height: 120px;
-    
+
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -508,7 +508,7 @@ footer{
     height: 18px;
 
     margin-top: 16px;
-    
+
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -520,7 +520,7 @@ footer{
     height: 18px;
 
     margin-top: 16px;
-    
+
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;

@@ -111,18 +111,20 @@
                 <p class="sec04-p01">Where you'll be</p>
                 <p class="sec04-p02">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
             </div>
-            <div id="daumRoughmapContainer1724033929202" class="root_daum_roughmap root_daum_roughmap_landing">
-                <script charset="UTF-8" class="daum_roughmap_loader_script"
-                        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js">
-                </script>
-                <script charset="UTF-8">
-                    new daum.roughmap.Lander({
-                        "timestamp" : "1724033929202",
-                        "key" : "2kdgk",
-                        "mapWidth" : "1278",
-                        "mapHeight" : "520"
-                    }).render();
-                </script>
+            <div class="map-container">
+                <div id="daumRoughmapContainer1724033929202" class="root_daum_roughmap root_daum_roughmap_landing">
+                    <script charset="UTF-8" class="daum_roughmap_loader_script"
+                            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js">
+                    </script>
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp" : "1724033929202",
+                            "key" : "2kdgk",
+                            "mapWidth" : "1278",
+                            "mapHeight" : "520"
+                        }).render();
+                    </script>
+                </div>
             </div>
         </section>
 
@@ -140,7 +142,7 @@
                     <div class="input-email">
                         <img id ="email-img" src="./images/mail.svg" alt="">
                         <form method="get">
-                            <input type="text" id="email" name="email" placeholder="Enter your e-mail address">
+                            <label for="email"><input type="text" id="email" name="email" placeholder="Enter your e-mail address"></label>
                             <button id="subscribe-btn" type="submit" onclick="check(event)">Subscribe</button>
                         </form>
                     </div>
@@ -170,12 +172,22 @@
 
     <footer>
         <h2 class="a11y-hidden">호두의 SNS관련 링크들</h2>
-        <img src="./images/Logo-fin.png" alt="호두로고">
-        <div class="footer-link-group">
-            <img src="./images/icon-blog.png" alt="블로그아이콘">
-            <img src="./images/icon-insta.png" alt="인스타아이콘">
-            <img src="./images/icon-facebook.png" alt="페이스북아이콘">
-            <img src="./images/icon-youtube.png" alt="유투브아이콘">
+        <div class="footer-sec01">
+            <img src="./images/Logo-fin.png" alt="호두로고">
+            <div class="footer-link-group">
+                <img src="./images/icon-blog.png" alt="블로그아이콘">
+                <img src="./images/icon-insta.png" alt="인스타아이콘">
+                <img src="./images/icon-facebook.png" alt="페이스북아이콘">
+                <img src="./images/icon-youtube.png" alt="유투브아이콘">
+            </div>
+        </div>
+        <div class="footer-sec02">
+            <div class="footer-sec02-01">
+                <p>Home</p>
+                <p>About</p>
+                <p>Support</p>
+                <p>Terms of Use</p>
+            </div>
         </div>
     </footer>
 </body>
